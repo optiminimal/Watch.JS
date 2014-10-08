@@ -107,7 +107,7 @@
     var defineGetAndSet = function (obj, propName, getter, setter) {
         try {
 
-            
+
             Object.observe(obj, function(changes) {
                 changes.forEach(function(change) {
                     if (change.name === propName) {
@@ -115,7 +115,7 @@
                     }
                 });
             });
-            
+
         } catch(e) {
 
             try {
@@ -459,7 +459,7 @@
 
     };
 
-    setInterval(loop, 50);
+    //setInterval(loop, 50);
 
     WatchJS.watch = watch;
     WatchJS.unwatch = unwatch;
